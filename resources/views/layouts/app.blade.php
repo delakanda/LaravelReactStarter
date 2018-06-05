@@ -12,8 +12,12 @@
     </head>
     <body>
         @yield('content')
+        @if(env("APP_ENV") === "production")
             <script src="/js/vendor.bundle.js"></script>
             <script src="/js/bundle.js"></script>
-
+        @else
+            <script src="http://localhost:8080/vendor.bundle.js"></script>
+            <script src="http://localhost:8080/bundle.js"></script>
+        @endif
     </body>
 </html>
