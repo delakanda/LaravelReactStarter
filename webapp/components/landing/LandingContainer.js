@@ -19,6 +19,5 @@ export default class LandingContainer extends Component {
     }
 
     componentDidMount() {
-
     }
 }

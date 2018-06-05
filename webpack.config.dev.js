@@ -8,4 +8,4 @@ const config = {
 
 const resultConfig = Object.assign({}, commonConfig, config);
 
-module.exports = resultConfig;
+module.exports = resultConfig

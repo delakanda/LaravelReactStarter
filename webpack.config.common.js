@@ -4,7 +4,7 @@ const config = {
     entry: './webapp/index.js',
     output: {
         path: path.resolve(__dirname, 'public/js'),
-        filename: 'app.bundle.js'
+        filename: 'bundle.js'
     },
     module: {
         rules: [
@@ -54,6 +54,17 @@ const config = {
             //     ]
             // }
         ]
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "vendor",
+                    chunks: "all"
+                }
+            }
+        }
     }
 };
 

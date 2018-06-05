@@ -4,7 +4,7 @@ const commonConfig = require('./webpack.config.common');
 
 const config = {
 	mode: 'production',
-    devtool: 'source-map',
+    // devtool: 'source-map',
     plugins: [
         new UglifyJsPlugin({
             sourceMap: true
