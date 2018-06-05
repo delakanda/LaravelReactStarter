@@ -5,7 +5,7 @@ import { HashRouter } from 'react-router-dom';
 
 import Routes from './../routes/Index';
 
-// import Header from './../components/partials/header';
+import {Header} from './../components/elements/Header';
 // import Footer from './../components/partials/footer';
 // import SideNav from './../components/partials/side_nav';
 
@@ -25,6 +25,8 @@ export class App extends Component {
         return (
             <HashRouter>
                 <div id = "app-wrapper">
+
+                    <Header />
                     
                     <Notification notification={notification}
                         dispatch={dispatch} />
