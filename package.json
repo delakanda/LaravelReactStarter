@@ -1,7 +1,7 @@
 {
-  "name": "sharkfist-front-end",
+  "name": "laravel-react-app",
   "version": "1.0.0",
-  "description": "Web app for sharkfist",
+  "description": "Web app with laravel & React",
   "author": "Delali Kanda <delakanda@gmail.com>",
   "main": "src/index.js",
   "devDependencies": {
@@ -23,6 +23,8 @@
     "webpack-dev": "webpack-dev-server --watch-poll --hot --config ./webpack.config.dev.js --mode development"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "axios-cancel": "^0.2.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
