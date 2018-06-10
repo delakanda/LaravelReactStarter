@@ -19,8 +19,8 @@
   },
   "scripts": {
     "deploy": "webpack --config webpack.config.prod.js",
-    "dev": "webpack --watch --config webpack.config.dev.js",
-    "webpack-dev": "webpack-dev-server --watch-poll --hot --config ./webpack.config.dev.js --mode development"
+    "dev-build": "webpack --watch --config webpack.config.dev.js",
+    "dev": "webpack-dev-server --watch-poll --hot --config ./webpack.config.dev.js --mode development"
   },
   "dependencies": {
     "axios": "^0.18.0",
