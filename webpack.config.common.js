@@ -4,7 +4,8 @@ const config = {
     entry: './webapp/index.js',
     output: {
         path: path.resolve(__dirname, 'public/js'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        chunkFilename: 'vendor.bundle.js'
     },
     module: {
         rules: [
